@@ -1,13 +1,255 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;
+}
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&display=swap');
+a{
+  color: black!important;
+  text-decoration: none!important;
+}
+.brand-logo, h2{
+  font-family: 'Grand Hotel', cursive;
+}
+#nav-mobile li .link{
+  padding: 0 5px;
+
+}
+#nav-mobile li svg{
+  font-size: 25px; 
+  /* padding: 2px 10px; */
+  margin-right: 5px;
+}
+#nav-mobile li .logout{
+  background-color: rgba(206, 24, 24, 0.719);
+  margin:  2px 5px 2px 0;
+  box-shadow: 5px 5px -3px black;
+  color: aliceblue!important;
+}
+.mycard{
+  margin-top: 30px;
+}
+.card-image {
+  max-height: 60vh;
+}
+.card-image img{
+  max-height: 60vh;
+  object-fit: contain;
+}
+.auth_card ::placeholder{
+  font-size: 15px;
+}
+.auth_card{
+  padding: 20px;
+  text-align: center;
+  margin: 10px auto;
+}
+.auth_card input{
+  height: auto!important;
+  padding: 3px!important;
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.item{
+  width: 30%;
+}
+.home-card{
+  /* max-width: 800px; */
+  width: 100%;
+  height: max-content;
+  /* margin: 26px auto; */
+}
+.material-icons{
+  cursor: pointer;
+}
+.auth_card h5{
+  font-size: 15px;
+  margin-top: 10px;
+
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfiletype{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  0 30px;
+}
+.inputfiletype img{
+ max-width: 50%;
+  height: 100px;
+}
+.inputfiletype label{
+  font-size: 12px;
+  background-color: #0095F6;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+}
+.posthead {
+  padding: 15px 10px;
+  display: flex;
+  border-bottom: 1px solid grey;
+  align-items: center;
+  align-content: center;
+}
+.posthead img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.posthead h5{
+  font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-size: 14px;
+margin-left: 10px;
+font-weight: 500;
+text-transform: capitalize;
+}
+.modal{
+  background-color: transparent;
+  box-shadow: none;
+}
+.modal-body{
+  padding: 0!important;
+ 
+}
+.mb1{
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-top: 1px solid whitesmoke;
+  background-color: transparent;
+  
+  font-size: 20px;
+  color: #0095F6;
+  font-weight: bold;
+  margin-top: 3px;
+  text-align: center;
+}
+.mb2{
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-top: 1px solid whitesmoke;
+  background-color: transparent;
+  
+  font-size: 20px;
+  color: rgb(236, 56, 56);
+  font-weight: bold;
+  margin-top: 3px;
+}
+.mb3{
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-top: 1px solid whitesmoke;
+  background-color: transparent;
+  
+  font-size: 20px;
+  color: gray;
+  font-weight: bold;
+  margin-top: 3px;
+}
+.itemimg{
+  height: 250px;
+  border: 1px solid rgb(184, 182, 182);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+.itemimg img{
+  max-height: 250px;
+  object-fit: contain;
+}
+.postbody{
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.postbody svg{
+  font-size: 100px;
+  color: grey;
+}
+.postbody img{
+  height: 250px;
+}
+.cansvg{
+  font-size: 25px;
+  cursor: pointer;
+}
+.finalleft{
+  border-right: 2px solid whitesmoke;
+}
+.fimg{
+  object-fit: contain;
+}
+.finalright .topone{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  line-height: 1.5px;
+}
+.finalright .topone img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.finalright .topone h4{
+  font-size: 15px;
+}
+.finalright .bottomone textarea{
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  height: 200px!important;
+}
+.imgdetail .imgd{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgdetail .imgd img{
+  max-height: 300px;
+  object-fit: contain;
+}
+.homecomment{
+  max-height: 100px;
+  overflow-y:scroll;
+}
+.home ::-webkit-scrollbar{
+  width: 15px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (max-width: 880px) {
+  li .link, li .link svg{
+    font-size: 10px;
+    padding: 0;
+  }
+  .brand-logo{
+    font-size: 20px!important;
+  }
+  .itemimg {
+    height: 100px;
+    border: 1px solid rgb(184, 182, 182);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
 }
